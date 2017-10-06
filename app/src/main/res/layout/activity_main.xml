@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.fengwei.selector.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="35dp">
+
+        <TextView
+            android:id="@+id/select_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:textColor="#2987fb"
+            android:textSize="15sp"
+            tools:text="2017"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="29dp"
+                android:paddingRight="24dp"
+                android:src="@mipmap/ic_arrow_left"
+                android:onClick="left"
+                />
+
+            <com.example.fengwei.selector.SelectorView
+                android:id="@+id/selector"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:space="10dp">
+
+                <CheckedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_btn_blue_selector"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/category_radiobutton_text_selector_newcar"/>
+
+                <CheckedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_btn_blue_selector"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/category_radiobutton_text_selector_newcar"/>
+
+                <CheckedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_btn_blue_selector"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/category_radiobutton_text_selector_newcar"/>
+
+                <CheckedTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:background="@drawable/bg_btn_blue_selector"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/category_radiobutton_text_selector_newcar"/>
+
+            </com.example.fengwei.selector.SelectorView>
+
+            <ImageView
+                android:id="@+id/select_right"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="29dp"
+                android:src="@mipmap/ic_arrow_right"
+                android:onClick="right"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
