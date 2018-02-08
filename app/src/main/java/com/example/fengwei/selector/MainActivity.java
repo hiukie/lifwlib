@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     List<String> list;
     private TextView show;
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "MainActivity dev";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
